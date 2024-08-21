@@ -1,0 +1,32 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjust this as needed */
+  margin: 0 auto;
+  padding: 0 16px; /* Adjust padding as needed */
+}
+
+section {
+  padding: 20px 0; /* Adjust padding as needed */
+}
+
+/* Example responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 8px;
+  }
+}
