@@ -1,188 +1,55 @@
 import React from "react";
-import AboutImage from "../assets/AboutMe-image.jpg";
+import { ImPointRight } from "react-icons/im";
+import AboutImage from "../assets/avator.jpg"; // Update with your image path
 
 const About = () => {
   return (
-    <div className="bg-black text-white py-20" id="About">
-      <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
-        <div className="flex flex-col md:flex-row items-center md:space-x-12">
+    <div
+      id="About"
+      className="bg-gray-900 text-white min-h-screen flex items-center justify-center p-10"
+    >
+      <div className="max-w-4xl w-full bg-gray-800 rounded-lg shadow-lg p-6 md:p-8">
+        <div className="flex flex-col md:flex-row items-center">
+          {/* Image Section */}
           <img
             src={AboutImage}
-            alt=""
-            className="w-72 h-80 rounded object-cover mb-8 md:mb-0"
+            alt="About Me"
+            className="w-32 h-32 md:w-48 md:h-48 rounded-full border-4 border-indigo-500 mb-6 md:mb-0 md:mr-8"
           />
-          <div className="flex-1">
-            <p className="text-lg mb-8">
-              I am a passionate full-stack developer with a focus on building
-              modern and responsive web applications. With a strong foundation
-              in both frontend and backend technologies, I strive to create
-              seamless and efficient user experiences.
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  HTML & CSS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-12/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  JavaScript
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-11/12"
-                  ></div>
-                </div>
-              </div>
 
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  PHP
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-10/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  C++
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  MYSQL
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-8/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  Asp.net
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-7/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  Java
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-6/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  React
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-5/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  Node JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-4/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  Express JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-3/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  MongoDB
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-2/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="javaScript" className="w-2/12">
-                  Python
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-1/12"
-                  ></div>
-                </div>
-              </div>
-            </div>
-            <div className="mt-12 flex justify-between text-center">
-              <div>
-                <h3
-                  className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500"
-                >
-                  1+
-                </h3>
-                <p>Years Experience</p>
-              </div>
-              <div>
-                <h3
-                  className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500"
-                >
-                  5+
-                </h3>
-                <p>Projects Completed</p>
-              </div>
-              <div>
-                <h3
-                  className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500"
-                >
-                  2+
-                </h3>
-                <p>Happy Clients</p>
-              </div>
-            </div>
+          {/* Text Section */}
+          <div className="text-center md:text-left">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              Hello there, <span className="text-indigo-500">Natnael</span>{" "}
+              here.
+              <br />
+              Born and raised in{" "}
+              <span className="text-indigo-500">Addis Ababa, Ethiopia</span>.
+            </h2>
+            <p className="text-base md:text-lg mb-4">
+              I'm a dedicated web developer currently in my final year of study
+              at Assosa University.
+              <br />
+              <br />
+              Apart from coding, what do I enjoy?
+            </p>
+
+            <ul className="list-disc list-inside mb-4">
+              <li className="flex items-center mb-2">
+                <ImPointRight className="text-indigo-500 mr-2" /> Listening to
+                Music
+              </li>
+              <li className="flex items-center mb-2">
+                <ImPointRight className="text-indigo-500 mr-2" /> Spending Time
+                with Family and friends
+              </li>
+            </ul>
+
+            <p className="italic text-gray-400 mb-4">
+              "The only limit to our realization of tomorrow is our doubts of
+              today."
+            </p>
+            <footer className="text-gray-500">Franklin D. Roosevelt</footer>
           </div>
         </div>
       </div>
