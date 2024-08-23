@@ -11,7 +11,9 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
           <div className="flex-1">
             <h3 className="text-3xl font-bold text-white mb-6">
-              <span className="block text-4xl md:text-5xl">Let's Talk</span>
+              <span className="bg-gray-900 text-4xl md:text-5xl">
+                Let's Talk
+              </span>
               <span className="block text-blue-300 text-xl md:text-2xl">
                 I'm here to help
               </span>
