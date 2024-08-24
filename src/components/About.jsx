@@ -27,8 +27,10 @@ const About = () => {
               <span className="text-indigo-500">Addis Ababa, Ethiopia</span>.
             </h2>
             <p className="text-base md:text-lg mb-4">
-              I'm a dedicated web developer currently in my final year of study
-              at Assosa University.
+              I am a dedicated web developer who recently graduated from Assosa
+              University with a degree in Information Technology. I am actively
+              seeking opportunities and am open to hiring for roles in web
+              development.
               <br />
               <br />
               Apart from coding, what do I enjoy?
