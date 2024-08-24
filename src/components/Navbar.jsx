@@ -8,14 +8,6 @@ import {
   DocumentTextIcon,
   PhoneIcon,
 } from "@heroicons/react/24/solid";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faLinkedin,
-  faTwitter,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -44,9 +36,35 @@ const Navbar = () => {
             className="text-white focus:outline-none"
           >
             {isDropdownOpen ? (
-              <FontAwesomeIcon icon={faTimes} className="w-6 h-6" />
+              <svg
+                className="w-6 h-6 text-blue-500"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 18L18 6M6 6l12 12"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             ) : (
-              <FontAwesomeIcon icon={faBars} className="w-6 h-6" />
+              <svg
+                className="w-6 h-6 text-blue-500"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 6h16M4 12h16M4 18h16"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             )}
           </button>
         </div>
@@ -61,25 +79,26 @@ const Navbar = () => {
             href="#Home"
             className="flex items-center text-white hover:text-gray-300 transition-colors duration-300 text-lg font-semibold italic"
           >
-            <HomeIcon className="w-6 h-6 mr-2" /> Home
+            <HomeIcon className="w-6 h-6 mr-2 text-blue-500" /> Home
           </a>
           <a
             href="#About"
             className="flex items-center text-white hover:text-gray-300 transition-colors duration-300 text-lg font-semibold italic"
           >
-            <UserIcon className="w-6 h-6 mr-2" /> About Me
+            <UserIcon className="w-6 h-6 mr-2 text-blue-500" /> About Me
           </a>
           <a
             href="#Skills"
             className="flex items-center text-white hover:text-gray-300 transition-colors duration-300 text-lg font-semibold italic"
           >
-            <WrenchScrewdriverIcon className="w-6 h-6 mr-2" /> Skills
+            <WrenchScrewdriverIcon className="w-6 h-6 mr-2 text-blue-500" />{" "}
+            Skills
           </a>
           <a
             href="#Projects"
             className="flex items-center text-white hover:text-gray-300 transition-colors duration-300 text-lg font-semibold italic"
           >
-            <BriefcaseIcon className="w-6 h-6 mr-2" /> Projects
+            <BriefcaseIcon className="w-6 h-6 mr-2 text-blue-500" /> Projects
           </a>
           <a
             href="https://drive.google.com/file/d/1zSFqZPmopzxXEUIGdbT36Fivz91ShoTZ/view?usp=sharing"
@@ -87,13 +106,13 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex items-center text-white hover:text-gray-300 transition-colors duration-300 text-lg font-semibold italic"
           >
-            <DocumentTextIcon className="w-6 h-6 mr-2" /> Resume
+            <DocumentTextIcon className="w-6 h-6 mr-2 text-blue-500" /> Resume
           </a>
           <a
             href="#Contact"
             className="flex items-center text-white hover:text-gray-300 transition-colors duration-300 text-lg font-semibold italic"
           >
-            <PhoneIcon className="w-6 h-6 mr-2" /> Contact
+            <PhoneIcon className="w-6 h-6 mr-2 text-blue-500" /> Contact
           </a>
         </div>
       </div>
@@ -111,25 +130,26 @@ const Navbar = () => {
               href="#Home"
               className="flex items-center text-white hover:text-gray-300"
             >
-              <HomeIcon className="w-6 h-6 mr-2" /> Home
+              <HomeIcon className="w-6 h-6 mr-2 text-blue-500" /> Home
             </a>
             <a
               href="#About"
               className="flex items-center text-white hover:text-gray-300"
             >
-              <UserIcon className="w-6 h-6 mr-2" /> About Me
+              <UserIcon className="w-6 h-6 mr-2 text-blue-500" /> About Me
             </a>
             <a
               href="#Skills"
               className="flex items-center text-white hover:text-gray-300"
             >
-              <WrenchScrewdriverIcon className="w-6 h-6 mr-2" /> Skills
+              <WrenchScrewdriverIcon className="w-6 h-6 mr-2 text-blue-500" />{" "}
+              Skills
             </a>
             <a
               href="#Projects"
               className="flex items-center text-white hover:text-gray-300"
             >
-              <BriefcaseIcon className="w-6 h-6 mr-2" /> Projects
+              <BriefcaseIcon className="w-6 h-6 mr-2 text-blue-500" /> Projects
             </a>
             <a
               href="https://drive.google.com/file/d/1zSFqZPmopzxXEUIGdbT36Fivz91ShoTZ/view?usp=sharing"
@@ -137,49 +157,15 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="flex items-center text-white hover:text-gray-300"
             >
-              <DocumentTextIcon className="w-6 h-6 mr-2" /> Resume
+              <DocumentTextIcon className="w-6 h-6 mr-2 text-blue-500" /> Resume
             </a>
             <a
               href="#Contact"
               className="flex items-center text-white hover:text-gray-300"
             >
-              <PhoneIcon className="w-6 h-6 mr-2" /> Contact
+              <PhoneIcon className="w-6 h-6 mr-2 text-blue-500" /> Contact
             </a>
           </nav>
-          <div className="flex justify-center space-x-4 mt-4">
-            <a
-              href="https://github.com/asero13th"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-gray-100"
-            >
-              <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/aser-hailu-7b5238240/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-gray-100"
-            >
-              <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5" />
-            </a>
-            <a
-              href="https://twitter.com/Aser09433103"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-gray-100"
-            >
-              <FontAwesomeIcon icon={faTwitter} className="w-5 h-5" />
-            </a>
-            <a
-              href="https://www.instagram.com/aser_hailu_/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-gray-100"
-            >
-              <FontAwesomeIcon icon={faInstagram} className="w-5 h-5" />
-            </a>
-          </div>
         </div>
       </div>
     </nav>
