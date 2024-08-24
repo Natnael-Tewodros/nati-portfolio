@@ -76,12 +76,12 @@ const Skills = () => {
           </div>
         </div>
         <div className="flex flex-col items-center bg-gray-800 p-5 rounded-xl shadow-lg">
-          <h3 className="text-xl mb-2 text-indigo-400 font-bold">JavaScript</h3>
+          <h3 className="text-xl mb-2 text-indigo-400 font-bold">Node Js</h3>
           <div
             className="radial-progress mx-10 text-white"
-            style={{ "--value": 85 }}
+            style={{ "--value": 30 }}
           >
-            85%
+            30%
           </div>
         </div>
         <div className="flex flex-col items-center bg-gray-800 p-5 rounded-xl shadow-lg">
