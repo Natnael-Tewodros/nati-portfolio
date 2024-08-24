@@ -1,4 +1,6 @@
 import React from "react";
+import logo from "../assets/logo.png"; // Example of correct case
+
 import {
   HomeIcon,
   UserIcon,
@@ -7,7 +9,6 @@ import {
   DocumentTextIcon,
   PhoneIcon,
 } from "@heroicons/react/24/solid"; // Example with Heroicons
-import logo from "../Assets/logo.png"; // Ensure this path is correct
 
 const Navbar = () => {
   return (
