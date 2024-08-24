@@ -5,7 +5,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import myImg from "../assets/home.jpg"; // Update with your image path
+import myImg from "../assets/home2.jpg"; // Update with your image path
 
 const Hero = () => {
   return (

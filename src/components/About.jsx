@@ -1,6 +1,6 @@
 import React from "react";
 import { ImPointRight } from "react-icons/im";
-import AboutImage from "../assets/home.jpg"; // Update with your image path
+import AboutImage from "../assets/home2.jpg"; // Update with your image path
 
 const About = () => {
   return (
