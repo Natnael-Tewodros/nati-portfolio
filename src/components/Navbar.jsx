@@ -101,7 +101,7 @@ const Navbar = () => {
             <BriefcaseIcon className="w-6 h-6 mr-2 text-blue-500" /> Projects
           </a>
           <a
-            href="https://drive.google.com/file/d/1zSFqZPmopzxXEUIGdbT36Fivz91ShoTZ/view?usp=sharing"
+            href="https://flowcv.com/resume/onl5jqahol"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center text-white hover:text-gray-300 transition-colors duration-300 text-lg font-semibold italic"
